@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Thing, Props } from '../src';
+// import "../tailwind.css"
 
 const meta: Meta = {
   title: 'Welcome',
