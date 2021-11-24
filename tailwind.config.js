@@ -1,7 +1,10 @@
 module.exports = {
   mode: 'jit',
-  purge: ["./src/**/*.tsx", "./stories/**/*.tsx"],
-  darkMode: false, // or 'media' or 'class'
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.tsx", "./stories/**/*.tsx"]
+  },
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
