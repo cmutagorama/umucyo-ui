@@ -75,6 +75,20 @@ module.exports = {
         900: "#054F31",
       },
     },
+    fontSize: {
+      h1: ["72px", "90px"],
+      h2: ["60px", "72px"],
+      h3: ["48px", "60px"],
+      h4: ["36px", "44px"],
+      h5: ["30px", "38px"],
+      h6: ["24px", "32px"],
+
+      xl: ["20px", "30px"],
+      lg: ["18px", "28px"],
+      md: ["16px", "24px"],
+      sm: ["14px", "20px"],
+      xs: ["12px", "18px"],
+    },
     extend: {},
   },
   variants: {
