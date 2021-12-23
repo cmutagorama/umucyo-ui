@@ -51,6 +51,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@fontsource/inter": "^4.5.1",
     "@size-limit/preset-small-lib": "^7.0.3",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-info": "^5.3.21",
@@ -59,25 +60,22 @@
     "@storybook/react": "^6.3.12",
     "@types/react": "^17.0.36",
     "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^9",
     "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
     "cz-conventional-changelog": "3.3.0",
     "husky": "^7.0.4",
+    "postcss": "^7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "4.3.1",
     "react-is": "^17.0.2",
     "semantic-release": "^18.0.1",
     "size-limit": "^7.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.5.2"
-  },
-  "dependencies": {
-    "@fontsource/inter": "^4.5.1",
-    "autoprefixer": "^9",
-    "classnames": "^2.3.1",
-    "postcss": "^7",
-    "react-icons": "4.3.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "config": {
     "commitizen": {
