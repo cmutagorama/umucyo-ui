@@ -87,6 +87,6 @@
     "url": "https://github.com/cmutagorama/umucyo-design-system.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
