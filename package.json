@@ -59,6 +59,7 @@
     "@types/react": "^17.0.36",
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
+    "cz-conventional-changelog": "3.3.0",
     "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -74,5 +75,10 @@
     "classnames": "^2.3.1",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
