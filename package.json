@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release --branches main"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -38,8 +39,7 @@
   "name": "umucyo-design-system",
   "author": "Charles Mutagorama",
   "module": "dist/umucyo-design-system.esm.js",
-  "size-limit": [
-    {
+  "size-limit": [{
       "path": "dist/umucyo-design-system.cjs.production.min.js",
       "limit": "10 KB"
     },
@@ -67,7 +67,8 @@
     "size-limit": "^7.0.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "semantic-release": "^18.0.1"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.1",
@@ -80,5 +81,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmutagorama/umucyo-design-system.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
