@@ -1,6 +1,7 @@
 import React, { FC } from "react" ;
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import classNames from "classnames";
+import { Pagination as PaginationHeadLess } from 'react-headless-pagination';
 
 interface PaginationProps {
     isMobile: boolean;
@@ -42,5 +43,50 @@ export const Pagination: FC<PaginationProps> = ({ isMobile, page, setPage, total
         );
     }
 
-    return <div>Desktop Pagination</div>;
+    const handlePageChange = (page: number) => setPage(page);
+
+    return (
+        <PaginationHeadLess
+            currentPage={page}
+            setCurrentPage={handlePageChange}
+            totalPages={10}
+            edgePageCount={2}
+            middlePagesSiblingCount={2}
+            className="flex items-center w-full h-10 text-sm select-none"
+            truncableText="..."
+            truncableClassName="w-10 px-0.5 text-center dark:text-gray-500"
+            >
+            <PaginationHeadLess.PrevButton
+                className={classNames(
+                    "h-10 font-medium flex items-center mr-2 text-gray-500 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 focus:outline-none", {
+                        "cursor-pointer": page !== 0,
+                        "opacity-50": page === 0
+                    }
+                )}
+            >
+                <FiArrowLeft size={20} className="mr-3" />
+                Previous
+            </PaginationHeadLess.PrevButton>
+
+            <div className="flex items-center justify-center flex-grow">
+                <PaginationHeadLess.PageButton
+                activeClassName="bg-primary-50 dark:bg-opacity-0 text-primary-600 dark:text-white"
+                inactiveClassName="text-gray-500"
+                className="flex items-center justify-center h-10 w-10 rounded-full cursor-pointer font-medium"
+                />
+            </div>
+
+            <PaginationHeadLess.NextButton
+                className={classNames(
+                    "h-10 font-medium flex items-center mr-2 text-gray-500 dark:text-white hover:text-gray-600 dark:hover:text-gray-200 focus:outline-none", {
+                        "cursor-pointer": page !== totalPages - 1,
+                        "opacity-50": page === totalPages -1 
+                    }
+                )}
+            >
+                Next
+                <FiArrowRight size={20} className="ml-3" />
+            </PaginationHeadLess.NextButton>
+        </PaginationHeadLess>
+    );
 }
