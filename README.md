@@ -4,6 +4,8 @@
 
 Umucyo UI is a design system of minimalistic, tree-shakable set of components. Used [TSDX](https://tsdx.io/) to scaffold this library which comes with [Storybook](https://storybook.js.org/) out of the box and [Tailwind CSS](https://tailwindcss.com/) for styling.
 
+🔅 You can preview all available components [here](https://umucyo-ui.netlify.app/)
+
 ### Installing Umucyo UI
 
 To use Umucyo UI components, all you need to do is install the `umucyo-ui` package:
@@ -23,3 +25,5 @@ function Example() {
   return <Pagination />
 }
 ```
+
+Happy coding 😊
