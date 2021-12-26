@@ -41,11 +41,11 @@
   "module": "dist/umucyo-ui.esm.js",
   "size-limit": [{
       "path": "dist/umucyo-ui.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "20 KB"
     },
     {
       "path": "dist/umucyo-ui.esm.js",
-      "limit": "10 KB"
+      "limit": "20 KB"
     }
   ],
   "devDependencies": {
