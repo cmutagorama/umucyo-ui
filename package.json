@@ -36,16 +36,15 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "umucyo-design-system",
+  "name": "umucyo-ui",
   "author": "Charles Mutagorama",
-  "module": "dist/umucyo-design-system.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/umucyo-design-system.cjs.production.min.js",
+  "module": "dist/umucyo-ui.esm.js",
+  "size-limit": [{
+      "path": "dist/umucyo-ui.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/umucyo-design-system.esm.js",
+      "path": "dist/umucyo-ui.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -84,7 +83,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cmutagorama/umucyo-design-system.git"
+    "url": "https://github.com/cmutagorama/umucyo-ui.git"
   },
   "publishConfig": {
     "access": "public"
