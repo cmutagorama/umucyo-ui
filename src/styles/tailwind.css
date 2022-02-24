@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.badge-base {
+		@apply inline-flex items-center rounded-2xl font-medium;
+	}
+
+	.badge-gray {
+		@apply bg-gray-100 text-gray-700;
+	}
+
+	.badge-primary {
+		@apply bg-primary-50 text-primary-700;
+	}
+
+	.badge-error {
+		@apply bg-error-50 text-error-700;
+	}
+
+	.badge-warning {
+		@apply bg-warning-50 text-warning-700;
+	}
+
+	.badge-success {
+		@apply bg-success-50 text-success-700;
+	}
+
+	.badge-sm {
+		@apply h-5.5 px-2 text-xs;
+	}
+
+	.badge-md {
+		@apply h-6 px-2.5 text-xs;
+	}
+
+	.badge-lg {
+		@apply h-7 px-3 text-sm;
+	}
+}
