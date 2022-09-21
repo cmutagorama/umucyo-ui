@@ -4,6 +4,7 @@ export * from "./Typography";
 export * from "./ButtonGroup";
 export * from "./Pagination";
 export * from "./Badge";
+export * from "./Button";
 
 // assets
 export * from "./data/images";
