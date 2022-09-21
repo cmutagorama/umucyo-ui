@@ -38,4 +38,133 @@
 	.badge-lg {
 		@apply h-7 px-3 text-sm;
 	}
+
+	/* Button */
+	.btn-base {
+		@apply flex items-center rounded-lg font-medium focus:outline-none whitespace-nowrap select-none;
+	}
+
+	.btn-sm {
+		@apply h-9 px-3.5 text-sm;
+	}
+
+	.btn-md {
+		@apply h-10 px-4 text-sm;
+	}
+
+	.btn-lg {
+		@apply h-11 px-4.5 text-md;
+	}
+
+	.btn-xl {
+		@apply h-12 px-5 text-md;
+	}
+
+	.btn-2xl {
+		@apply h-15 px-7 text-lg;
+	}
+
+	.btn-icon-sm {
+		@apply h-9 w-9;
+	}
+
+	.btn-icon-md {
+		@apply h-10 w-10;
+	}
+	
+	.btn-icon-lg {
+		@apply h-11 w-11;
+	}
+
+	.btn-icon-xl {
+		@apply h-12 w-12;
+	}
+
+	.btn-icon-2xl {
+		@apply h-15 w-15;
+	}
+
+	/* Primary */
+	.btn-primary {
+		@apply bg-primary-600 dark:bg-gray-800 text-white dark:text-white;
+	}
+
+	.btn-primary-hover {
+		@apply hover:bg-primary-700 dark:hover:bg-gray-700;
+	}
+
+	.btn-primary-focus {
+		@apply focus:ring-4 focus:ring-primary-100 dark:focus:ring-gray-100 dark:focus:ring-opacity-20;
+	}
+
+	.btn-primary-disabled {
+		@apply bg-primary-200 dark:bg-gray-400 text-white;
+	}
+
+	/* Secondary */
+	.btn-secondary {
+		@apply shadow-sm border border-transparent dark:border-white bg-primary-50 dark:bg-opacity-20 text-primary-700 dark:text-white;
+	}
+
+	.btn-secondary-hover {
+		@apply hover:bg-primary-100 dark:hover:bg-white dark:hover:bg-opacity-40 dark:hover:border-opacity-20 dark:hover:text-white
+	}
+
+	.btn-secondary-focus {
+		@apply focus:ring-4 focus:ring-primary-100 dark:focus:ring-gray-100 dark:focus:ring-opacity-20;
+	}
+
+	.btn-secondary-disabled {
+		@apply shadow-sm bg-primary-25 dark:bg-white dark:bg-opacity-20 text-primary-200 dark:border-gray-200 dark:text-gray-300;
+	}
+
+	/* SecondaryGray */
+	.btn-secondaryGray {
+		@apply shadow-sm border border-gray-300 dark:border-white bg-white dark:bg-gray-900 text-gray-600 dark:text-white;
+	}
+	.btn-secondaryGray-hover {
+		@apply hover:bg-gray-50 dark:hover:bg-gray-900 hover:text-gray-800 dark:hover:text-gray-300 dark:border-gray-300;
+	}
+
+	.btn-secondaryGray-focus {
+		@apply focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-100 dark:focus:ring-opacity-20;
+	}
+
+	.btn-secondaryGray-disabled {
+		@apply shadow-sm border border-gray-200 text-gray-300 dark:bg-gray-600 dark:text-white;
+	}
+
+	/* Tertiary */
+	.btn-tertiary {
+		@apply bg-white dark:bg-gray-900 text-primary-700;
+	}
+
+	.btn-tertiary-hover {
+		@apply hover:bg-primary-50 dark:hover:bg-white dark:hover:bg-opacity-20;
+	}
+
+	.btn-tertiary-disabled {
+		@apply bg-white dark:bg-gray-900 text-gray-300;
+	}
+
+	/* TertiaryGray */
+	.btn-tertiaryGray {
+		@apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200;
+	}
+
+	.btn-tertiaryGray-hover {
+		@apply hover:bg-gray-50 dark:hover:bg-white dark:hover:bg-opacity-20 hover:text-gray-800 dark:hover:text-white;
+	}
+
+	.btn-tertiaryGray-disabled {
+		@apply bg-white dark:bg-gray-900 text-gray-300 dark:text-gray-400;
+	}
+
+	.btn-group {
+		@apply inline-flex whitespace-nowrap items-center h-10 px-4 font-medium text-sm focus:outline-none hover:bg-gray-50 dark:hover:bg-gray-700 text-grat-700 dark:text-white border border-gray-300 dark:border-gray-500;
+	}
+
+	.navItem {
+		@apply flex items-center w-full h-10 py-2 rounded-lg cursor-pointer text-md whitespace-nowrap select-none transition-all duration-100 ease-out hover:bg-primary-50 dark:hover:bg-gray-100 dark:hover:bg-opacity-10;
+	}
 }
